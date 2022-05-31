@@ -103,6 +103,13 @@ input {
 .container {
   /* The destinations are enclosed in an article element that we want to make a grid */
   /* Set the display property to 'grid' and justify the content */
+}
+
+.row {
+  /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
+  /* Use the grid-template-columns property to set each column to 30% */
+  /* You can experiment with different units for the width values */
+  /* Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
   max-width: 86vw;
   height: 100%;
   margin: 0 auto;
@@ -111,13 +118,7 @@ input {
   place-items: center;
   gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.row {
-  /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
-  /* Use the grid-template-columns property to set each column to 30% */
-  /* You can experiment with different units for the width values */
-  /* Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
+  min-height: 100%;
   
 }
 
@@ -164,19 +165,32 @@ img {
 }
 
 .author-thumb > img {
-  margin:auto
+  margin:auto;
+  border-radius: 100%;
+  box-shadow: 3px 8px 12px 0px rgba(0, 0, 0, 0.4);
 }
 
 .footer {
   /* Write your code here */
+  min-height: 12rem;
+  color: #fff;
+  background-color: #040E27;
+}
+
+
+.footer-area {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-widget p {
-  /* Write your code here */
+  line-height: 1.8rem;
 }
 
 .footer-widget a:hover {
-   /* Write your code here */
+  color:  #103594;
+  background-color: #fff;
 }
 
 .footer-widget ul li {
@@ -184,7 +198,7 @@ img {
 }
 
 .footer-widget a {
-   /* Write your code here */
+   color: #fff;
 }
 
 /* Media Queries */

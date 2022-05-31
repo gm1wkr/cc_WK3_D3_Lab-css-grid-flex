@@ -64,6 +64,23 @@ nav > ul > li > a:hover{
   display: flex;
 }
 
+section.popular {
+  background-color: #4584b1;
+  background: radial-gradient(circle, #4584b1 0%, #103594 84%);
+
+  box-shadow: 3px 8px 12px 0px rgba(0, 0, 0, 0.4);
+}
+
+.section-title > h3 {
+  margin:0;
+  padding: 0;
+  line-height: 6rem;
+  color: #fff;
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
 
 .input-field > *{
   width: 14rem;
@@ -145,11 +162,12 @@ img {
 
 .single-destination > img {
   border-radius: 0.6rem;
-  box-shadow: 3px 8px 12px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 8px 12px 0px rgba(0, 0, 0, 0.6);
 }
 
 .testimonial-area {
     background-color: #374050;
+    border-top: 1px solid #4584b1;
     padding: 6rem 0 6rem 0;
     display: flex;
 
@@ -157,12 +175,14 @@ img {
 
 .single-testmonial{
   color: #fff;
-  background-color: #00000022;
+  background-color: #ffffff11;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.4) 84%);
   padding: 2rem;
+  padding-bottom: 1rem;
   max-width: 100%;
   min-height: 100%;
   border: 1pt solid rgb(108, 108, 108);
-  box-shadow: 3px 8px 12px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 8px 12px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,6 +200,7 @@ img {
   min-height: 12rem;
   color: #fff;
   background-color: #040E27;
+  border-top: 1px solid #fff;
 }
 
 

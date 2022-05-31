@@ -86,7 +86,7 @@ input {
 }
 
 .nice-select {
-  width: 10rem;
+  width: 14rem;
   height: 3rem;
   border-radius: 4px;
   color:#103594;
@@ -111,19 +111,16 @@ input {
 .container {
   /* The destinations are enclosed in an article element that we want to make a grid */
   /* Set the display property to 'grid' and justify the content */
-}
-
-.row {
-  /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
-  /* Use the grid-template-columns property to set each column to 30% */
-  /* You can experiment with different units for the width values */
-  /* Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
-  max-width: 86vw;
-  height: 100%;
-  margin: 0 auto;
   display: grid;
   justify-content: center;
   place-items: center;
+}
+
+.row {
+ 
+  max-width: 86vw;
+  height: 100%;
+  margin: 0 auto;
   gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   min-height: 100%;
@@ -217,4 +214,43 @@ img {
     /* Add some responsive code here */
     /* Make the destinations stack on top of each other */
     /* Make the form input stack on top of each other */
+    nav, nav > ul, .container, .where-togo > form {
+      display: block;
+    }
+
+    .popular > article {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav{
+      height: auto;
+      padding: 1rem 0;
+    }
+
+    .input-field{
+      margin-left: 2.6rem;
+    }
+
+    .input-field:first-child{
+      width: 86%;
+      margin: auto;
+    } 
+
+    .nice-select {
+      width: 14rem;
+    }
+
+    .single-destination{
+      /* margin: auto; */
+      text-align: left;
+    }
+
+    .single-testmonial{
+      margin-bottom: 3rem;;
+    }
+
+    .single-testmonial:last-child{
+      margin-bottom: 0rem;;
+    }
 }

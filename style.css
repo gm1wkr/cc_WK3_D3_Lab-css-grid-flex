@@ -36,13 +36,15 @@ nav > ul > li {
 nav > ul > li > a{
   color:  #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem
+  padding: 0.5rem 1rem;
+  transition-timing-function: ease-in-out;
+  transition: border-color 1s, color 0.8s, background-color 0.4s;
+  border: 1px solid transparent;
 }
 
 nav > ul > li > a:hover{
-  color:  #103594;
-  background-color: #fff;
-  text-decoration: underline;
+  background-color: #4584b1;
+  border-color: #fff;
 }
 
 
@@ -79,7 +81,7 @@ nav > ul > li > a:hover{
 
 input {
   /* Style the form input elements using width, height, padding-left and border-radius */
-  
+  color:#103594;
 
 }
 
@@ -87,6 +89,12 @@ input {
   width: 10rem;
   height: 3rem;
   border-radius: 4px;
+  color:#103594;
+}
+
+.search-btn::before{
+  content:'🔎';
+  padding-right: 0.4rem;
 }
 
 .search-btn {
@@ -188,18 +196,20 @@ img {
   line-height: 1.8rem;
 }
 
+.footer-widget a {
+  padding: 0.3rem;
+   color: #fff;
+}
+
 .footer-widget a:hover {
   color:  #103594;
   background-color: #fff;
 }
 
 .footer-widget ul li {
-  /* Write your code here */
+  margin-bottom: 1rem;
 }
 
-.footer-widget a {
-   color: #fff;
-}
 
 /* Media Queries */
 
